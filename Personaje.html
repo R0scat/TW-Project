@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="Personaje.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento%20Sans">
+	<script type="text/javascript" src="ScriptPersonaje.js"></script>
+	<title>Characters</title>
+</head>
+<body>
+	<h1 id="titlu"> <a href="file:///C:/Users/maiar/Documents/html/Proiect%20Html/htmlProiect.html#ct">Baldur's Gate 3</a> Characters:</h1>
+	<div id="wrapper">
+		<div class="character">Karlach
+			<a href="https://bg3.wiki/wiki/Karlach"><img src="resurse/Karlach.png" width="320" alt="Karlach"></a>
+		</div>
+		<div class="character">Gale
+			<a href="https://bg3.wiki/wiki/Gale"><img src="resurse/Gale.png" width="335" alt="Gale"></a>
+		</div>
+		<div class="character">Astarion
+			<a href="https://bg3.wiki/wiki/Astarion"><img src="resurse/Astarion.png" width="320" alt="Astarion"></a>
+		</div>
+		<div class="character">Shadowheart
+			<a href="https://bg3.wiki/wiki/Shadowheart"><img src="resurse/Shadowheart.png" width="320" alt="Shadowheart"></a>
+		</div>
+		<div class="character">Lae'zel
+			<a href="https://bg3.wiki/wiki/Lae'zel"><img src="resurse/Lae'zel.png" width="320" alt="Lae'zel"></a> 
+		</div>
+		<div class="character">Wyll
+			<a href="https://bg3.wiki/wiki/Wyll">
+			<img src="resurse/Wyll.png" width="320" alt="Wyll"></a>
+		</div>
+	</div>
+	<div id="quiz">
+		<h2>Which character are you? Take the quiz and find out :D</h2>
+		<div id="quizContainer">
+			<form target="_self" method="POST" onsubmit="submitForm()">
+				<input type="hidden" name="access_key" value="f12e4895-12bb-42cb-a705-b67745e8c912">
+				<fieldset>
+					<legend>Details about you:</legend>
+					<div>
+						<label for="name"> Name*: </label>
+						<input type="text" id="name" name="name" required maxlength="50">
+					</div>
+					<div>
+						<label for="nickname"> Nickname: </label>
+						<input type="text" id="nickName" name="nickname" maxlength="50">
+					</div>
+					<div>
+						<label for="age"> Age*: </label>
+						<input type="number" id="age" name="age" min="17">
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Pick your favourites!</legend>
+					<div>
+						<label for="color"> Favourite color*: </label>
+						<input type="color" id="color" name="favColor" required>
+					</div>
+				</fieldset>
+				<input type="submit" value="submit">
+			</form>
+		</div>
+	</div>
+</body>
+</html>
