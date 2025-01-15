@@ -8,17 +8,20 @@
 	<link href='https://fonts.googleapis.com/css?family=Quando' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Quattrocento%20Sans' rel='stylesheet'>
 	<script type="text/javascript" src="ScriptProiect.js"></script>
+	<!--<script type="text/javascript" src="ScriptLogout.js"></script>-->
+	<script type="text/javascript" src="clicks.js"></script>
 </head>
 <body>
 	<header class="menu">
 		<div class="dropdown">
 			<button class="dropBtn"> Menu </button>
-			<div class="dropContent">
+			<div class="dropContent" id="dropContent">
 				<a href="#ct">Main</a>
 				<a href="#abt">About</a>
 				<a href="#gpl">Gameplay</a>
 				<a href="#lar">Larian</a>
 				<a href="#crd">Credit</a>
+				<a href="Login.html" id="login">Login</a>
 			</div>	
 		</div>
 	</header>
@@ -34,7 +37,7 @@
 				<h1>What is <a href="https://en.wikipedia.org/wiki/Baldur%27s_Gate_3"> Baldur’s Gate 3? </a></h1>	
 			</div>
 			<div class="aboutContent">
-				<h2>Baldur's Gate 3 is a 2023 role-playing video game developed and published by Larian Studios. It is the third main installment to the Baldur's Gate series, based on the tabletop fantasy role-playing system of Dungeons & Dragons. A partial version of the game was released in early access format for macOS and Windows in October 2020. It remained in early access until its full release for Windows in August 2023, with versions for PlayStation 5, macOS, and Xbox Series X/S releasing later that year. One thing that has been acclaimed is the <a href="file:///C:/Users/maiar/Documents/html/Proiect%20Html/Personaje.html"> character</a> design. 
+				<h2>Baldur's Gate 3 is a 2023 role-playing video game developed and published by Larian Studios. It is the third main installment to the Baldur's Gate series, based on the tabletop fantasy role-playing system of Dungeons & Dragons. A partial version of the game was released in early access format for macOS and Windows in October 2020. It remained in early access until its full release for Windows in August 2023, with versions for PlayStation 5, macOS, and Xbox Series X/S releasing later that year. One thing that has been acclaimed is the <a href="Personaje.html"> character</a> design. 
 				</h2>
 			</div>
 			<!--<div class="transitionRectangle"></div>-->
@@ -67,9 +70,11 @@
 			<div class="rectangle">
 				<div class="rectangleContent">
 					<h2>Credits:</h2>
+					<p>Profile visits:</p>
+					<p id="clicks"></p>
 					<ul>
-						<li> <a href="https://www.instagram.com/one_salty_kid/" id="insta">Instagram</a> </li>
-						<li> <a href="https://ro-ro.facebook.com/people/Teo-Rosca/pfbid025jMguN4dGbdvLK3zTdbh6cPu6JabcMKNtJAXSqVS3nKchowuUM9VbpqnWrA1CyM4l/" id="fb">Facebook</a> </li>
+						<li> <a target="_blank" href="https://www.instagram.com/one_salty_kid/" id="insta" onclick="clickCounter()" type="button">Instagram</a> </li>
+						<li> <a	target="_blank" href="https://ro-ro.facebook.com/people/Teo-Rosca/pfbid025jMguN4dGbdvLK3zTdbh6cPu6JabcMKNtJAXSqVS3nKchowuUM9VbpqnWrA1CyM4l/" id="fb" onclick="clickCounter()" type="button">Facebook</a> </li>
 					</ul>
 					<p class="disclaimer">
 						Disclaimer: This website is made by a poor student, I do not own any of the pictures used in the making of it. 

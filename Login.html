@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Logout Page</title>
+    <link rel="stylesheet" href="Login.css">
+    <script src="Login.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Quando' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Quattrocento%20Sans' rel='stylesheet'>
+</head>
+<body>
+    <div class="background">
+        <!--<img src="resurse/backgroundPic.jpg" style="width:100%" alt="background">-->
+        <div id="login-form">
+            <form id="login" onsubmit="loginUser(event)">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <span id="username-error" class="error"></span>
+    
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <span id="password-error" class="error"></span>
+    
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -247,7 +247,7 @@ iframe{
 
 .rectangle{
   position: absolute;
-  height: 20vw;
+  height: 25vw;
   width: 100vw;
   background-color: #b9ab8c;
   top: 90%;
@@ -328,9 +328,9 @@ article{
   font-size: 2.5vw;
 }
 
-div{
-  /* color: #b9ab8c; */
-}
+/* div{
+  /* color: #b9ab8c;
+}*/
 
 button{
   font-family: "Quattrocento Sans";
@@ -344,3 +344,8 @@ canvas{
   align-items: center;
 }
 
+p{
+  font-family: "Quattrocento Sans";
+  font-size: 1.5vw;
+  margin: 0;
+}

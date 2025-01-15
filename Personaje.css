@@ -92,3 +92,33 @@ fieldset{
 	box-sizing: inherit;
 }
 
+.TitleStyle{
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.myStyle{
+	background-color: #624a93;
+	padding: 16px;
+}
+
+#result{
+	width: 100vw;
+	height: 100vw;
+}
+
+#container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	height: 30vh;
+}
+
+button{
+	text-align: center;
+	color: #dcd5eb;
+	background-color: #41325f;
+	border: none;
+	border-radius: 2px;
+	transform: scale(5);
+}

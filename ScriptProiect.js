@@ -30,7 +30,7 @@ window.onload = function() {
             ctx.fill();
             ctx.closePath();
 
-            // questionMark(ctx, color);
+            questionMark(ctx, color);
         }
     }
 
@@ -80,6 +80,19 @@ window.onload = function() {
             currentTemplate = 1
             draw('#b9ab8c');
         }
+    }
+    //alert('sessionStorage length: ' + sessionStorage.length);
+    if (sessionStorage.length > 2) {
+        var element = document.getElementById('login');
+        var logoutToAppend = document.createElement('a');
+        var div = document.getElementById('dropContent');
+        element.remove();
+
+        logoutToAppend.text = 'Logout';
+        logoutToAppend.href = 'requests.html';
+
+        div.appendChild(logoutToAppend);
+        sessionStorage.clear();
     }
 }
 
